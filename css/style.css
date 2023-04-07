@@ -1,0 +1,341 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #3a0000;
+}
+body {
+  font-family: nanum, namyang, Arial, Helvetica;
+  background-image: url(../imges/floor-tile.png);
+}
+@font-face {
+  font-family: nanum;
+  src: url(../font/NanumBarunGothic.ttf);
+}
+@font-face {
+  font-family: namyang;
+  src: url(../font/NanumMyeongjoBold.ttf);
+}
+/*헤더시작*/
+header {
+  position: static;
+  top: 0;
+  width: 100%;
+  background: #fff;
+}
+header .headm {
+  width: 1240px;
+  height: 60px;
+  margin: 0 auto;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headm .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .headm ul {
+  flex-grow: 1;
+  display: flex;
+}
+
+header .headm ul li a {
+  padding-left: 130px;
+  font-weight: bold;
+}
+header .headm ul li a:hover {
+  color: #dea57b;
+}
+/*헤더끝*/
+section {
+  width: 100%;
+  margin: 0 auto;
+  background: #000;
+  color: #fff;
+}
+section .sec {
+  width: 1240px;
+  margin: 0 auto;
+  background: #3a0000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+section .visual {
+  width: 65%;
+  height: 500px;
+  background: url(../imges/soboro.jpg) center/cover;
+}
+section .visual img {
+  position: relative;
+  top: 0;
+  left: 10px;
+}
+section .text_top {
+  text-align: center;
+  font-size: 14px;
+  width: 30%;
+  line-height: 20px;
+  padding: 30px;
+}
+section .text_top li {
+  padding: 15px 0;
+}
+section .text_top li:first-child {
+  font-family: namyang;
+  padding-bottom: 5px;
+}
+section .text_top li:nth-child(3) {
+  font-family: namyang;
+  font-size: 24px;
+}
+section .text_top li:last-child {
+  text-align: right;
+  font-size: 12px;
+}
+/*비주얼끝*/
+article {
+  width: 1240px;
+  margin: 150px auto 0;
+}
+article .titlle {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+article .titlle p {
+  display: inline;
+  background: #3a0000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-family: namyang;
+  box-shadow: 5px 5px 10px #000;
+}
+article ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: url(../imges/pattan.jpg);
+  padding: 20px 0;
+  border-radius: 15px;
+}
+article ul li {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+article ul img {
+  height: 545px;
+  transform: scale(1);
+  transition: transform 0.5s ease-out;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #000;
+}
+article ul li:hover > img {
+  transform: scale(1.25);
+}
+article ul li .cloum {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  height: 90%;
+}
+article ul li .cloum li {
+  margin-bottom: 5px;
+}
+article ul li .cloum img {
+  overflow: hidden;
+  height: 50%;
+}
+article .menuT {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 36px;
+}
+article .menuT a {
+  position: relative;
+  bottom: -4px;
+  right: 0px;
+  z-index: 1;
+  color: #fff;
+  font-size: 44px;
+  line-height: 36px;
+}
+article .menuT a i {
+  transform: translateX(0px);
+  transition: transform 0.5s;
+}
+article .menuT a:hover i {
+  transform: translateX(5px);
+}
+article .cloum .menuT {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 36px;
+}
+/*2단째 메뉴끝*/
+.bottomM {
+  width: 1240px;
+  height: 800px;
+  background: url(../imges/meun.png) top left no-repeat;
+  margin: 150px auto 0;
+}
+.btoomT {
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 130px;
+}
+.btoomT .inner {
+  width: 100%;
+  margin-top: 60px;
+}
+.btoomT img {
+  width: 40px;
+  background: #dea57b;
+  border-radius: 15px;
+  padding: 5px;
+}
+.btoomT p {
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: 24px;
+  color: #3a0000;
+}
+/*대표메뉴 상단끝*/
+.bottomM ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  border-radius: 25px;
+}
+.bottomM .mini {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  padding: 10px 0;
+}
+.mini li {
+  position: relative;
+  margin-top: 20px;
+}
+.mini li:first-child::after {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  content: "고소하고 부드러운 그 맛";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 0%;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+  transition: height 0.5s;
+}
+.mini:hover li:first-child::after {
+  height: 30%;
+}
+.mini li:first-of-type img {
+  width: 270px;
+}
+.mini li:nth-of-type(2) {
+  background: #e79152;
+  width: 270px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 24px;
+  padding: 8px 0;
+  white-space: nowrap;
+  font-size: 22px;
+  color: #fff;
+}
+.mini li:nth-of-type(3) {
+  font-size: 18px;
+  font-weight: bold;
+}
+.mini li:nth-of-type(4) {
+  display: none;
+  position: absolute;
+  right: -20px;
+  top: -7px;
+}
+.mini:hover li:nth-of-type(4) {
+  display: block;
+}
+.mini li:last-of-type img {
+  width: 40px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+.mini li:last-of-type img:hover {
+  transform: scale(1.2);
+}
+/*대표메뉴끝*/
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  padding: 25px 0 25px;
+  background: #ffffff;
+}
+.foot {
+  width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: #aaa;
+  font-size: 14px;
+}
+.foot .left {
+  display: flex;
+  align-items: center;
+}
+.foot .left li:first-child {
+  font-size: 24px;
+  padding-right: 20px;
+  font-weight: bold;
+}
+.foot .left li:last-child {
+  line-height: 16px;
+}
+.foot .right {
+  display: flex;
+  align-items: center;
+  line-height: 18px;
+}
+.foot .right li img {
+  padding: 5px;
+}
+
+.foot .right li:last-of-type {
+  margin-left: 5px;
+}
+.foot .right span {
+  font-size: 20px;
+  font-weight: bold;
+}
